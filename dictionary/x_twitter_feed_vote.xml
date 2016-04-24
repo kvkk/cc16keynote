@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Vote" max_length="40" name="x_twitter_feed_vote" type="collection">
+        <element choice="1" label="Tag" max_length="40" name="tag" type="choice">
+            <choice/>
+        </element>
+        <element label="Twitter User" max_length="40" name="twitter_user" type="string"/>
+    </element>
+</database>

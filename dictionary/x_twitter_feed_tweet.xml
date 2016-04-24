@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Tweet" max_length="40" name="x_twitter_feed_tweet" type="collection">
+        <element label="Tweet" max_length="250" name="tweet" type="string"/>
+        <element label="Twitter User" max_length="40" name="twitter_user" type="string"/>
+    </element>
+</database>
