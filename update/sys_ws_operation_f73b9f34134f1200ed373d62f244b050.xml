@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_ws_operation">
+    <sys_ws_operation action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <consumes>application/json,application/xml,text/xml</consumes>
+        <consumes_customized>false</consumes_customized>
+        <default_operation_uri/>
+        <enforce_acl/>
+        <http_method>POST</http_method>
+        <name>Vote Counter</name>
+        <operation_script><![CDATA[(function process(/*RESTAPIRequest*/ request, /*RESTAPIResponse*/ response) {
+	
+	var feeds = request.body.data.tweets;
+	var voteRecord = new GlideRecord("x_twitter_feed_vote");
+	var tweetRecord = new GlideRecord("x_twitter_feed_tweet");
+	
+	for(var i=0;i<feeds.length;i++){
+		var feedData = feeds[i];
+		var feedText = feedData.text;
+		var feedUser = feedData.user;
+		
+		voteRecord.initialize();
+		voteRecord.setValue("twitter_user",feedUser);
+		if(feedText.search(/#K16tweeter/i)>-1){
+			voteRecord.setValue("tag","k16tweeter");
+		} else if(feedText.search(/#K15tweeter/i)>-1){
+			voteRecord.setValue("tag","k15tweeter");
+		}
+		voteRecord.insert();
+		
+		tweetRecord.initialize();
+		tweetRecord.setValue("tweet",feedText);
+		tweetRecord.setValue("twitter_user",feedUser);
+		tweetRecord.insert();
+	}
+	
+	response.setStatus(201);
+	var responseMsg = {
+		"message":"Survey Updated"
+	};
+	
+	response.setBody(responseMsg);
+	return response;
+
+
+})(request, response);]]></operation_script>
+        <operation_uri>/api/x_twitter_feed/survey</operation_uri>
+        <produces>application/json,application/xml,text/xml</produces>
+        <produces_customized>false</produces_customized>
+        <relative_path>/</relative_path>
+        <request_example/>
+        <requires_acl_authorization>false</requires_acl_authorization>
+        <requires_authentication>true</requires_authentication>
+        <short_description/>
+        <sys_class_name>sys_ws_operation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2016-04-25 16:47:19</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>f73b9f34134f1200ed373d62f244b050</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Vote Counter</sys_name>
+        <sys_package display_value="Twitter Feed" source="x_twitter_feed">9e0233ac13cb1200ed373d62f244b07f</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Twitter Feed">9e0233ac13cb1200ed373d62f244b07f</sys_scope>
+        <sys_update_name>sys_ws_operation_f73b9f34134f1200ed373d62f244b050</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2016-04-25 16:47:19</sys_updated_on>
+        <web_service_definition display_value="Survey">b22b9334134f1200ed373d62f244b006</web_service_definition>
+        <web_service_version/>
+    </sys_ws_operation>
+</record_update>
