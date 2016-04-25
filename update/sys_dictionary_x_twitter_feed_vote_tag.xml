@@ -51,8 +51,8 @@
         <sys_class_name>sys_dictionary</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2016-04-24 23:44:35</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
-        <sys_id>991277e813cb1200ed373d62f244b0ff</sys_id>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>397188f04f0f12001f6eac118110c7fc</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>Tag</sys_name>
         <sys_package display_value="Twitter Feed" source="x_twitter_feed">9e0233ac13cb1200ed373d62f244b07f</sys_package>
@@ -60,8 +60,8 @@
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Twitter Feed">9e0233ac13cb1200ed373d62f244b07f</sys_scope>
         <sys_update_name>sys_dictionary_x_twitter_feed_vote_tag</sys_update_name>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2016-04-24 23:44:35</sys_updated_on>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2016-04-25 00:50:39</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

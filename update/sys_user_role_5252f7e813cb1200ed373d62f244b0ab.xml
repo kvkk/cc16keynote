@@ -5,7 +5,6 @@
         <can_delegate>true</can_delegate>
         <description/>
         <elevated_privilege>false</elevated_privilege>
-        <encryption_context/>
         <grantable>true</grantable>
         <includes_roles/>
         <name>x_twitter_feed_vote_user</name>
@@ -13,7 +12,7 @@
         <sys_class_name>sys_user_role</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2016-04-24 23:44:33</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>5252f7e813cb1200ed373d62f244b0ab</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>x_twitter_feed_vote_user</sys_name>

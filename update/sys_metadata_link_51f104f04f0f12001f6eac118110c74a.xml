@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>029100744f0f12001f6eac118110c7f2</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="tag" table="x_twitter_feed_vote" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>tag</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>K15 Tweeter</label>
+            <language>en</language>
+            <name>x_twitter_feed_vote</name>
+            <sequence/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2016-04-25 00:51:38</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>31a104744f0f12001f6eac118110c74a</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2016-04-25 00:51:41</sys_updated_on>
+            <value>k15tweeter</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>tag</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>K16 Tweeter</label>
+            <language>en</language>
+            <name>x_twitter_feed_vote</name>
+            <sequence/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2016-04-25 00:51:24</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>029100744f0f12001f6eac118110c7f2</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2016-04-25 00:51:32</sys_updated_on>
+            <value>k16tweeter</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>tag</element>
+            <name>x_twitter_feed_vote</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2016-04-25 00:51:24</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>6da104744f0f12001f6eac118110c744</sys_id>
+            <sys_mod_count>4</sys_mod_count>
+            <sys_name>tag</sys_name>
+            <sys_package display_value="Twitter Feed" source="x_twitter_feed">9e0233ac13cb1200ed373d62f244b07f</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Twitter Feed">9e0233ac13cb1200ed373d62f244b07f</sys_scope>
+            <sys_update_name>sys_choice_x_twitter_feed_vote_tag</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2016-04-25 00:51:41</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2016-04-25 00:52:45</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>51f104f04f0f12001f6eac118110c74a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>K16 Tweeter</sys_name>
+        <sys_package display_value="Twitter Feed" source="x_twitter_feed">9e0233ac13cb1200ed373d62f244b07f</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Twitter Feed">9e0233ac13cb1200ed373d62f244b07f</sys_scope>
+        <sys_update_name>sys_metadata_link_51f104f04f0f12001f6eac118110c74a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2016-04-25 00:52:45</sys_updated_on>
+        <tablename>sys_choice</tablename>
+    </sys_metadata_link>
+</record_update>
